@@ -94,6 +94,28 @@ This project implements PCA from scratch and applies it to image compression by 
 
 **Application:** Image compression and feature extraction
 
+## 3.Neural Networks
 
+Neural networks are computational models inspired by biological neural networks that constitute animal brains. They consist of interconnected nodes (neurons) organized in layers, where each connection has an associated weight that is adjusted during training. Neural networks can learn complex patterns and relationships in data through a process called backpropagation, where errors are propagated backward through the network to update weights. Multi-layer perceptrons (MLPs) are a fundamental type of neural network that can approximate any continuous function, making them powerful tools for both classification and regression tasks.
 
+### Neural Networks & Optimization
+
+This project implements a complete neural network framework from scratch using only NumPy, covering all essential components of deep learning including layers, activation functions, loss functions, optimizers, and training procedures:
+
+**Project overview:**
+- Implements a Multi-Layer Perceptron (MLP) from scratch without using deep learning frameworks (PyTorch/TensorFlow)
+- Builds neural network layers including Linear, ReLU, Tanh, Dropout, and BatchNorm with forward and backward propagation
+- Implements multiple optimization algorithms: SGD, Momentum, Nesterov, RMSProp, Adam, and AdamW
+- Includes L1/L2 regularization and a complete training loop with gradient accumulation and early stopping
+- Performs experiments comparing different optimizers, regularization methods, and training strategies
+
+**Key features:**
+- Complete implementation from scratch using only NumPy (no deep learning frameworks)
+- Numerical gradient checking for verifying backpropagation correctness
+- Modular architecture with configurable layers, activations, and regularization
+- Support for micro-batching (gradient accumulation) for training with large logical batches
+- Comprehensive experiments demonstrating optimizer comparison, regularization ablation, and BatchNorm impact analysis
+- Training history tracking with train/validation loss and accuracy metrics
+
+**Application:** Deep learning fundamentals, understanding neural network internals, and educational purposes for learning how neural networks work under the hood
 
